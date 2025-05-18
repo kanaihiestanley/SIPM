@@ -1,0 +1,106 @@
+
+*{
+  margin: 0;
+  padding:0;
+}
+
+body{
+  z-index: 0;
+  
+}
+
+.slide-container{
+  background-image: linear-gradient(to top right, #ad5389, #3c1053);
+}
+
+.left, .right{
+  border: 2px darkgrey solid;
+  background: lightgrey;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 20%;  
+  width: 60%;
+  position: relative;
+}
+  
+#left{
+  opacity: 0;
+  padding: 30px;
+}
+
+#right{
+  opacity: 0;
+  padding: 30px;
+}
+
+.foot{
+  border: 2px darkgrey solid;
+  background: black;
+  border-radius: 10px;
+  color: orange;
+  font-size: 20px;
+  line-height: 50px;
+  padding:50px;
+  width: 50%;
+  margin-top: 30px;
+  display: flex;
+  margin-left: 45%;
+  margin-bottom: 50px;
+  left:-200px;
+  opacity: 0;
+}
+
+.animation-right{
+  animation: righty 2s forwards;
+  position: relative;
+}
+
+@keyframes righty{
+  0%{
+    opacity: 0;
+    right: -200px;
+  }
+
+ 100% {
+    opacity: 1;
+    right: 60px;
+  }
+}
+
+.animation-left{
+  animation: lefty 2s forwards;
+  position: relative;
+}
+
+
+@keyframes lefty{
+  0%{
+  opacity: 0;
+    left: -200px;
+  }
+  
+ 100% {
+  opacity: 1;
+  left: 60px;
+  }
+}
+
+.animation-top{
+  animation: toping 2s forwards;
+  position: relative;
+  animation-delay: 1s;
+}
+
+@keyframes toping{
+  0%{
+    opacity: 0;
+    bottom: -200px;
+ }
+
+  100% {
+    opacity: 1;
+    bottom: 2px;
+  }
+
+}
