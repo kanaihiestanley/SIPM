@@ -15,18 +15,68 @@ code {
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 599px) {
+@media only screen and (min-width: 1px) and (max-width: 300px) {
+	
+	
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+	
 	.SubHeaderBanner{	
-		background-image: linear-gradient(to bottom right, #ad5389, #3c1053);		
+		background-image: linear-gradient(to bottom right, #ed3d84, #3c1053);		
 		position: absolute;		
 		z-index: 2;
 		transform: rotate(60deg);	
 		height: 500px;
-		width: 500px;
-		margin-left: -300px;
+		width: 300px;
+		margin-left: -100px;
 		box-shadow: 5px 0 5px #504f4d;	
+		opacity: 70%;
 		
 	}
+
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 500px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
 	header {		
 		position: fixed;
 		width: 100%;
@@ -165,8 +215,445 @@ code {
 }
 
 
+
+
+@media only screen and (min-width: 301px) and (max-width: 400px) {
+
+	
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+
+	.SubHeaderBanner{	
+		background-image: linear-gradient(to bottom right, #ad5353, #3c1053);		
+		position: absolute;		
+		z-index: 2;
+		transform: rotate(60deg);	
+		height: 500px;
+		width: 300px;
+		margin-left: -300px;
+		box-shadow: 5px 0 5px #504f4d;	
+		opacity: 70%;
+		
+	}
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 500px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
+
+	header {		
+		position: fixed;
+		width: 100%;
+		padding: 20px;
+		z-index: 99999;
+	}
+	header .mobile-logo {
+		display: block;
+		width: 60px;
+	}
+	
+	.mobile-logo img {
+		width: 100%;
+		height: auto;
+		border-radius: 360%;
+	}
+	
+	.mobile-header {
+		display: block;
+	}
+	#Services {
+		padding: 30px 0;
+	}
+	#Services h2 {
+	    font-size: 38px;
+	    margin-bottom: 30px;
+	}
+	#Services .each-services img {
+		padding-bottom: 10px;
+	}
+	.each-services {
+	    margin-bottom: 40px;
+	}
+	#OurWork h2, #TestimonialsSlider h2 {
+		font-size: 38px;
+	}
+	#OurWork .grey-box {
+		margin-bottom: 30px;
+	}
+	#OurWork .each-work {
+		padding: 0 7px 10px;
+		width: 127px;
+		height: 120px;
+	}
+	#OurWork .each-work img {
+		width: 100%;
+		height: auto;
+	}
+	#OurBlog h2 {
+		font-size: 38px;
+	}
+	#OurBlog {
+	    padding: 60px 0;
+	} 
+	.each-block {
+	    position: static;
+	    width: auto;
+	    padding: 0 0;
+	    margin-bottom: 25px;
+	    display: inline-block;
+	}
+	.blog-wrap {
+		margin: 40px 0;
+	}
+	#TestimonialsSlider {
+		padding: 40px 0;
+	}
+	.testimonials-dtl p {
+	    width: auto;
+	    padding: 0 20px;
+	}
+	.testimonials-dtl h5 {
+		padding-top: 20px;
+	}
+	#Footer p {
+		font-size: 34px;
+	}
+	.social-icons li i {
+	    font-size: 26px;
+	}
+	.blog-wrap {
+		height: auto;
+	}
+	#OurBlog .each-block {
+		width: 100%;
+	}
+	#OurBlog .blog-wrap::before, #OurBlog .each-block::before {
+		display: none;
+	}
+	#OurBlog .blog-wrap .blog-intro {
+		width: 75%;
+	}
+	#Testimonials {
+		padding-bottom: 30px;
+	}
+	#Testimonials span {
+		font-size: 50px;
+	}
+	#Testimonials h2 {
+		font-size: 40px;
+	}
+	#Testimonials .title {
+		width: 70%;
+	}
+	#Testimonials .testi-wrapper {
+		margin-top: 50px;
+	}
+	#Testimonials .testi-wrapper .latest-testimonials {
+		margin-right: 0;
+	}
+	#Testimonials .testi-wrapper .each-testi {
+		width: 100%;
+	}
+	#Testimonials .testi-wrapper .old-testimonials {
+		margin: 0 0 30px 0;
+		height: auto;
+	}
+	#Testimonials .each-testi .profile {
+		position: static;
+	}
+	.social-icons li {
+		margin: 0 8px;
+	}
+
+	.bannerLogo img{
+		width: 75px;
+		height: 75px;
+		border-radius: 360%;
+		box-shadow: 2px 2px #000;
+		position: absolute;
+		top: 50px;
+		margin-left: 80%;
+		display: inline-block;
+		z-index: 99999;
+	}
+}
+
+
+
+@media only screen and (min-width: 401px) and (max-width: 599px) {
+	
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+	.SubHeaderBanner{	
+		background-image: linear-gradient(to bottom right, #ed3d84, #3c1053);		
+		position: absolute;		
+		z-index: 2;
+		transform: rotate(60deg);	
+		height: 500px;
+		width: 450px;
+		margin-left: -300px;
+		box-shadow: 5px 0 5px #504f4d;	
+		opacity: 70%;
+		
+	}
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 500px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
+
+	header {		
+		position: fixed;
+		width: 100%;
+		padding: 20px;
+		z-index: 99999;
+	}
+	header .mobile-logo {
+		display: block;
+		width: 60px;
+	}
+	
+	.mobile-logo img {
+		width: 100%;
+		height: auto;
+		border-radius: 360%;
+	}
+	
+	.mobile-header {
+		display: block;
+	}
+	#Services {
+		padding: 30px 0;
+	}
+	#Services h2 {
+	    font-size: 38px;
+	    margin-bottom: 30px;
+	}
+	#Services .each-services img {
+		padding-bottom: 10px;
+	}
+	.each-services {
+	    margin-bottom: 40px;
+	}
+	#OurWork h2, #TestimonialsSlider h2 {
+		font-size: 38px;
+	}
+	#OurWork .grey-box {
+		margin-bottom: 30px;
+	}
+	#OurWork .each-work {
+		padding: 0 7px 10px;
+		width: 127px;
+		height: 120px;
+	}
+	#OurWork .each-work img {
+		width: 100%;
+		height: auto;
+	}
+	#OurBlog h2 {
+		font-size: 38px;
+	}
+	#OurBlog {
+	    padding: 60px 0;
+	} 
+	.each-block {
+	    position: static;
+	    width: auto;
+	    padding: 0 0;
+	    margin-bottom: 25px;
+	    display: inline-block;
+	}
+	.blog-wrap {
+		margin: 40px 0;
+	}
+	#TestimonialsSlider {
+		padding: 40px 0;
+	}
+	.testimonials-dtl p {
+	    width: auto;
+	    padding: 0 20px;
+	}
+	.testimonials-dtl h5 {
+		padding-top: 20px;
+	}
+	#Footer p {
+		font-size: 34px;
+	}
+	.social-icons li i {
+	    font-size: 26px;
+	}
+	.blog-wrap {
+		height: auto;
+	}
+	#OurBlog .each-block {
+		width: 100%;
+	}
+	#OurBlog .blog-wrap::before, #OurBlog .each-block::before {
+		display: none;
+	}
+	#OurBlog .blog-wrap .blog-intro {
+		width: 75%;
+	}
+	#Testimonials {
+		padding-bottom: 30px;
+	}
+	#Testimonials span {
+		font-size: 50px;
+	}
+	#Testimonials h2 {
+		font-size: 40px;
+	}
+	#Testimonials .title {
+		width: 70%;
+	}
+	#Testimonials .testi-wrapper {
+		margin-top: 50px;
+	}
+	#Testimonials .testi-wrapper .latest-testimonials {
+		margin-right: 0;
+	}
+	#Testimonials .testi-wrapper .each-testi {
+		width: 100%;
+	}
+	#Testimonials .testi-wrapper .old-testimonials {
+		margin: 0 0 30px 0;
+		height: auto;
+	}
+	#Testimonials .each-testi .profile {
+		position: static;
+	}
+	.social-icons li {
+		margin: 0 8px;
+	}
+
+	.bannerLogo img{
+		width: 75px;
+		height: 75px;
+		border-radius: 360%;
+		box-shadow: 2px 2px #000;
+		position: absolute;
+		top: 50px;
+		margin-left: 80%;
+		display: inline-block;
+		z-index: 99999;
+	}
+}
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 600px) and (max-width: 767px) {
+
+	
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+
 	.SubHeaderBanner{	
 		background-image: linear-gradient(to bottom right, #ad5389, #3c1053);		
 		position: absolute;		
@@ -176,8 +663,21 @@ code {
 		width: 500px;
 		margin-left: -300px;
 		box-shadow: 5px 0 5px #504f4d;	
-		
+		opacity: 70%;
 	}
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 500px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
 
 	header {		
 		position: fixed;
@@ -318,7 +818,41 @@ code {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media screen and (min-width: 768px) and (max-width: 991px){
+
 	
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+		
 	.bannerLogo img{
 		width: 150px;
 		height: 150px;
@@ -340,8 +874,22 @@ code {
 		width: 600px;
 		margin-left: -300px;
 		box-shadow: 5px 0 5px #504f4d;	
-		
+		opacity: 70%;
 	}
+
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 700px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
 
 	header {		
 		position: fixed;
@@ -422,7 +970,41 @@ code {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media screen and (min-width: 992px) and (max-width: 1024px){
-	
+
+		
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+		
 	#OurWork .each-work {
 		width: 30.6%;
 	}
@@ -457,9 +1039,21 @@ code {
 		width: 750px;
 		margin-left: -300px;
 		box-shadow: 5px 0 5px #504f4d;	
-		
+		opacity: 70%;
 	}
 	
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 700px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
 
 }
 
@@ -470,6 +1064,41 @@ code {
 
 @media screen and (min-width: 1025px) and (max-width: 1900px){
 	
+
+			
+	.otherHeaderContent h1{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 200px;
+		font-weight: bold;	
+		position: absolute;
+		top:  100px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #504f4d;
+		z-index: 999;
+	}
+
+	.otherHeaderContent h3::first-letter{
+		font-size: 60px;
+	}
+
+	.otherHeaderContent h3{
+		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 50px;
+		position: absolute;
+		top:  300px;
+		margin-left: -1200px;
+		text-shadow: 3px 3px 0 #50414a;
+		z-index: 999;
+	}
+
+	.otherHeaderContent{
+		background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 10%;
+		/* overflow: hidden; */
+	}
+
 
 	.bannerLogo img{
 		width: 150px;
@@ -494,9 +1123,22 @@ code {
 		width: 900px;
 		margin-left: -300px;
 		box-shadow: 5px 0 5px #504f4d;	
-		/* opacity: 70%; */
+		opacity: 70%;
 		
 	}
+
+	.SubOtherHeaderBanner{	
+	background: red;
+	position: relative;
+	top: -300px;
+	transform: rotate(60deg);	
+	height: 900px;
+	width: 700px;
+	margin-left: -100px;
+	z-index: 4;
+	box-shadow: 5px 0 5px #504f4d;	
+	}
+
 }
 
 
@@ -582,30 +1224,6 @@ code {
 
 
 
-.otherHeaderContent h1{
-	font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 200px;
-	font-weight: bold;	
-	position: absolute;
-	top:  100px;
-	margin-left: -1200px;
-	text-shadow: 3px 3px 0 #504f4d;
-	z-index: 999;
-}
-
-.otherHeaderContent h3::first-letter{
-	font-size: 60px;
-}
-
-.otherHeaderContent h3{
-	font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 50px;
-	position: absolute;
-	top:  300px;
-	margin-left: -1200px;
-	text-shadow: 3px 3px 0 #50414a;
-	z-index: 999;
-}
 
 .ourContactBG{	
 	background: url(./Components/images/BannerImage/BodyBG.webp);
@@ -613,25 +1231,9 @@ code {
 	background-size: cover;
 }
 
-.otherHeaderContent{
-	background: url(./Components/images/BannerImage/OtherHeaderBanner.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 10%;
-	/* overflow: hidden; */
-}
 
-.SubOtherHeaderBanner{	
-	background: red;
-	position: relative;
-	top: -300px;
-	transform: rotate(60deg);	
-	height: 900px;
-	width: 700px;
-	margin-left: -100px;
-	z-index: 4;
-	box-shadow: 5px 0 5px #504f4d;	
-}
+
+
 
 .otherFooterBG{
 	background: url(./Components/images/BannerImage/FooterBG.webp);

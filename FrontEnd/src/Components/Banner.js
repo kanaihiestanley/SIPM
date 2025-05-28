@@ -16,19 +16,19 @@ class Banner extends Component{
             <div className="" >                
                 <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride='carousel'>
                     <div className="carousel-inner">
-                        <div className="carousel-item active" data-bs-interval='1000'>
+                        <div className="carousel-item active" data-bs-interval='2000'>
                             <img src={firstSlide} className="d-block w-100" alt="firstSlide" />
                             <h1 className='slidetext'>Come Let Us Reason Together, Says The LORD</h1>
                         </div>
-                        <div className="carousel-item" data-bs-interval='1000'>
+                        <div className="carousel-item" data-bs-interval='2000'>
                             <img src={secondSlide} className="d-block w-100" alt="secondSlide" />
                             <h1 className='slidetext'>Study to show thy self worthy</h1>
                         </div>
-                        <div className="carousel-item" data-bs-interval='1000'>
+                        <div className="carousel-item" data-bs-interval='2000'>
                             <img src={thirdSlide} className="d-block w-100" alt="thirdSlide" />
                             <h1 className='slidetext'>Thy word is a light to my Path</h1>
                         </div>
-                        <div className="carousel-item" data-bs-interval='1000'>
+                        <div className="carousel-item" data-bs-interval='2000'>
                             <img src={forthSlide} className="d-block w-100" alt="forthSlide" />
                             <h1 className='slidetext'>Come Unto me all You, That are Heavy Ladden and i will give You Rest</h1>
                         </div>
