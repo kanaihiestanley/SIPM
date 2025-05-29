@@ -98,7 +98,7 @@ import blogIcon from './images/blog-icon.png'
                         </div>
                         </div>
                     </div>
-                    <div className="text-center learnmore mt-4">
+                    <div className="text-center learnmore">
                         <NavLink className="nav-link active" to="/OurContact">
                         <span>Contact Us</span>
                         </NavLink>
