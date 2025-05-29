@@ -14,12 +14,9 @@ code {
     monospace;
 }
 
-.learnmore {
-  margin-top: 2rem;
-}
 
-@media only screen and (min-width: 0px) and (max-width: 300px) {
-	
+
+@media only screen and (min-width: 1px) and (max-width: 300px) {
 	
 	
 	.otherHeaderContent h1{
