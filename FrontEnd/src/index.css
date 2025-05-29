@@ -14,10 +14,29 @@ code {
     monospace;
 }
 
+.learnmore {
+  margin-top: 2rem;
+}
 
-@media only screen and (min-width: 1px) and (max-width: 300px) {
+@media only screen and (min-width: 0px) and (max-width: 300px) {
 	
-	
+		.learnmore {
+		margin-top: 2.5rem;
+		padding-bottom: 1rem; /* Add bottom padding if it's being clipped */
+	}
+
+	.each-block {
+		margin-bottom: 2rem;
+	}
+
+	.blog-intro h3 {
+		font-size: 1.1rem; /* Adjust heading size if needed */
+	}
+
+	.blog-intro p {
+		font-size: 0.95rem; /* Improve readability */
+	}
+		
 	.otherHeaderContent h1{
 		font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
 		font-size: 200px;
