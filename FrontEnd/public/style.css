@@ -13,10 +13,10 @@
 	font-family: 'Futura PT bold';
 	src: url("../font/FuturaPTBold.otf");
 }
-@font-face {
+/* @font-face {
 	font-family: 'Futura PT book';
 	src: url("../font/FuturaPTBook.otf");
-}
+} */
 @font-face {
 	font-family: 'Futura PT Heavy';
 	src: url("../font/FuturaPTHeavy.otf");

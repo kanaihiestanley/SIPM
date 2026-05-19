@@ -6,7 +6,7 @@ const {
     createBiblePost,
     deleteBiblePost,
     updateBiblePost
-} = require('../controllers/biblePostController')
+} = require('../controllers/biblePostControllerPostgres')
 
 const router = express.Router()
 

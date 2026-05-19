@@ -1,104 +1,214 @@
-import React from 'react';
-import { useState } from "react";
-import axios from "axios";
+// import React from 'react';
+
+// const BibleDetails = ({ BiblePost, onDelete, onUpdate }) => {
+//   const [isEditing, setIsEditing] = useState(false);
+//   const [editedPost, setEditedPost] = useState({
+//     title: BiblePost.title,
+//     description: BiblePost.description,
+//     bible_verse: BiblePost.bible_verse
+//   });
+
+//   const handleEdit = () => {
+//     setIsEditing(true);
+//   };
+
+//   const handleCancel = () => {
+//     setIsEditing(false);
+//     setEditedPost({
+//       title: BiblePost.title,
+//       description: BiblePost.description,
+//       bible_verse: BiblePost.bible_verse
+//     });
+//   };
+
+//   const handleSave = async () => {
+//     try {
+//       const response = await axios.put(`http://localhost:5005/api/biblePosts/${BiblePost.id}`, editedPost);
+//       onUpdate(response.data);
+//       setIsEditing(false);
+//       alert('Post updated successfully!');
+//     } catch (error) {
+//       console.error('Error updating post:', error);
+//       alert('Failed to update post');
+//     }
+//   };
+
+//   const handleChange = (e) => {
+//     setEditedPost({
+//       ...editedPost,
+//       [e.target.name]: e.target.value
+//     });
+//   };
+
+//   if (isEditing) {
+//     return (
+//       <div className="card mb-3">
+//         <div className="card-body">
+//           <input
+//             type="text"
+//             className="form-control mb-2"
+//             name="title"
+//             value={editedPost.title}
+//             onChange={handleChange}
+//             placeholder="Title"
+//           />
+//           <input
+//             type="text"
+//             className="form-control mb-2"
+//             name="bible_verse"
+//             value={editedPost.bible_verse}
+//             onChange={handleChange}
+//             placeholder="Bible Verse"
+//           />
+//           <textarea
+//             className="form-control mb-2"
+//             name="description"
+//             value={editedPost.description}
+//             onChange={handleChange}
+//             placeholder="Description"
+//             rows="3"
+//           />
+//           <button className="btn btn-success btn-sm me-2" onClick={handleSave}>
+//             Save
+//           </button>
+//           <button className="btn btn-secondary btn-sm" onClick={handleCancel}>
+//             Cancel
+//           </button>
+//         </div>
+//       </div>
+//     );
+//   }
+
+//   return (
+//     <div className="card mb-3">
+//       <div className="card-body">
+//         <h5 className="card-title">{BiblePost.title}</h5>
+//         <h6 className="card-subtitle mb-2 text-muted">{BiblePost.bible_verse}</h6>
+//         <p className="card-text">{BiblePost.description}</p>
+//         <p className="card-text">
+//           <small className="text-muted">
+//             Created: {new Date(BiblePost.created_at).toLocaleDateString()}
+//           </small>
+//         </p>
+//         <button className="btn btn-warning btn-sm me-2" onClick={handleEdit}>
+//           Edit
+//         </button>
+//         <button className="btn btn-danger btn-sm" onClick={() => onDelete(BiblePost.id)}>
+//           Delete
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default BibleDetails;
+
+
+
+
+
+import React, { useState } from 'react';  // Added useState import
+import axios from 'axios';  // Added axios import
 
 const BibleDetails = ({ BiblePost, onDelete, onUpdate }) => {
-    const [isEditing, setIsEditing] = useState(false);
-    const [editedPost, setEditedPost] = useState({ ...BiblePost });
+  const [isEditing, setIsEditing] = useState(false);
+  const [editedPost, setEditedPost] = useState({
+    title: BiblePost.title,
+    description: BiblePost.description,
+    bible_verse: BiblePost.bible_verse
+  });
 
-    const handleClick = async () => {
-        try {
-            await axios.delete(`http://localhost:4000/api/sipmRoute/${BiblePost._id}`);
-            onDelete(BiblePost._id);
-        } catch (error) {
-            console.error('Error deleting data:', error);
-        }
-    };
+  const handleEdit = () => {
+    setIsEditing(true);
+  };
 
-    const handleEdit = () => {
-        setIsEditing(true);
-    };
+  const handleCancel = () => {
+    setIsEditing(false);
+    setEditedPost({
+      title: BiblePost.title,
+      description: BiblePost.description,
+      bible_verse: BiblePost.bible_verse
+    });
+  };
 
-    const handleSave = async () => {
-        try {
-            await axios.patch(`http://localhost:4000/api/sipmRoute/${BiblePost._id}`, editedPost);
-            onUpdate(editedPost);
-            setIsEditing(false);
-        } catch (error) {
-            console.error('Error updating data:', error);
-        }
-    };
+  const handleSave = async () => {
+    try {
+      const response = await axios.put(`http://localhost:5005/api/biblePosts/${BiblePost.id}`, editedPost);
+      onUpdate(response.data);
+      setIsEditing(false);
+      alert('Post updated successfully!');
+    } catch (error) {
+      console.error('Error updating post:', error);
+      alert('Failed to update post');
+    }
+  };
 
-    const handleCancel = () => {
-        setIsEditing(false);
-        setEditedPost({ ...BiblePost });
-    };
+  const handleChange = (e) => {
+    setEditedPost({
+      ...editedPost,
+      [e.target.name]: e.target.value
+    });
+  };
 
-    const handleInputChange = (e) => {
-        setEditedPost({ ...editedPost, [e.target.name]: e.target.value });
-    };
-
+  if (isEditing) {
     return (
-        <div className="Bible-details" style={{ marginTop: "10px" }}>
-            {isEditing ? (
-                <>
-                    <label>Title:</label>
-                    <input
-                        type="text"
-                        name="title"
-                        value={editedPost.title}
-                        onChange={handleInputChange}
-                    />
-                    <label>Description:</label>
-                    <input
-                        type="text"
-                        name="description"
-                        value={editedPost.description}
-                        onChange={handleInputChange}
-                    />
-                    <label>Bible Verse:</label>
-                     <input
-                         type="text"
-                         name="bibleVerse"
-                         value={editedPost.bibleVerse}
-                         onChange={handleInputChange}
-                     />
-                    <button onClick={handleSave}>Save</button>
-                    <button onClick={handleCancel}>Cancel</button>
-                </>
-            ) : (
-                <>
-                    <h4>{BiblePost.title}</h4>
-                    <p><strong>Description: </strong>{BiblePost.description}</p>
-                    <p><strong>Bible Verse: </strong>{BiblePost.bibleVerse}</p>
-                    <p>{BiblePost.createdAt}</p>
-                    <button className="btn btn-danger" onClick={handleClick}>Delete Post</button>
-
-                    { '\u00A0' } {/* used as an alternative to &nbsp*/}
-
-                    <button className="btn btn-secondary" onClick={handleEdit}>Edit Post</button>
-                    <hr />
-                </>
-            )}
+      <div className="card mb-3">
+        <div className="card-body">
+          <input
+            type="text"
+            className="form-control mb-2"
+            name="title"
+            value={editedPost.title}
+            onChange={handleChange}
+            placeholder="Title"
+          />
+          <input
+            type="text"
+            className="form-control mb-2"
+            name="bible_verse"
+            value={editedPost.bible_verse}
+            onChange={handleChange}
+            placeholder="Bible Verse"
+          />
+          <textarea
+            className="form-control mb-2"
+            name="description"
+            value={editedPost.description}
+            onChange={handleChange}
+            placeholder="Description"
+            rows="3"
+          />
+          <button className="btn btn-success btn-sm me-2" onClick={handleSave}>
+            Save
+          </button>
+          <button className="btn btn-secondary btn-sm" onClick={handleCancel}>
+            Cancel
+          </button>
         </div>
+      </div>
     );
-}
+  }
+
+  return (
+    <div className="card mb-3">
+      <div className="card-body">
+        <h5 className="card-title">{BiblePost.title}</h5>
+        <h6 className="card-subtitle mb-2 text-muted">{BiblePost.bible_verse}</h6>
+        <p className="card-text">{BiblePost.description}</p>
+        <p className="card-text">
+          <small className="text-muted">
+            Created: {BiblePost.created_at ? new Date(BiblePost.created_at).toLocaleDateString() : 'Recently'}
+          </small>
+        </p>
+        <button className="btn btn-warning btn-sm me-2" onClick={handleEdit}>
+          Edit
+        </button>
+        <button className="btn btn-danger btn-sm" onClick={() => onDelete(BiblePost.id)}>
+          Delete
+        </button>
+      </div>
+    </div>
+  );
+};
 
 export default BibleDetails;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

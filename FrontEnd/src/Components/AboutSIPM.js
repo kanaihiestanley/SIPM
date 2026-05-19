@@ -67,7 +67,9 @@ const AboutSIPM = () => {
                                         <div className="carousel-inner ">
                                             
                                             <div className="carousel-item active">
-                                                <img src={firstSlide} className="d-block w-100 card-img-top" alt="firstSlide" />                                               
+                                                <img src={firstSlide} className="d-block w-100 card-img-top" alt="firstSlide" style={{width: "60px", 
+                                                    height: "700px"
+                                                }} />                                               
                                             </div>
                                            
                                             <div className="carousel-item">
@@ -79,7 +81,7 @@ const AboutSIPM = () => {
                                             </div>
 
                                             <div className="carousel-item">
-                                                <img src={fortSlide} className="d-block w-100 card-img-top" alt="firstSlide" />                                                
+                                                <img src={fortSlide} className="d-block w-100 card-img-top" alt="SECONDSlide" />                                                
                                             </div>
 
                                         </div>

@@ -10,20 +10,20 @@ class OtherHeaderContent extends Component {
         
         
         return(
-            <div className="container-fluid otherHeaderContent" style={{ height: '650px'}}>
+            <div className="otherHeaderContent" style={{ height: '650px'}}>
                 <nav className="navbar navbar-expand-lg otherHeaderContent">
                     <div className="container-fluid">
                         {/* <a className="navbar-brand  position-fixed top-0 end-0" href="/">
                             <img src={sipmLogo} alt="logo" style={{width: '50px', height: '50px', borderRadius: '360%'}} />
                         </a> */}
-                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style={{zIndex: 9999, position: 'relative'}} >
                             <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                             <ul className="navbar-nav fixed-top">
                                 <li className="nav-item">
                                     <a className="nav-link active" aria-current="page" href="/">
-                                        <img src={sipmLogo} alt="logo" style={{width: '50px', height: '50px', borderRadius: '360%'}} />
+                                        <img className="logo" src={sipmLogo} alt="logo" style={{width: '50px', height: '50px', borderRadius: '360%'}} />
                                     </a>
                                 </li>
                                 <li className="nav-item">                                    
@@ -58,8 +58,8 @@ class OtherHeaderContent extends Component {
                                         Stream LIVE Service
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><NavLink className="dropdown-item" to="/LiveStream">Live Stream Dashboard</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/LivestreamUserDisplay">Live Streaming</NavLink></li>                                        
+                                        <li><NavLink className="dropdown-item" to="/">Live Stream Dashboard</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to="/">Live Streaming</NavLink></li>                                        
                                     </ul>
                                 </li>
 
@@ -80,14 +80,14 @@ class OtherHeaderContent extends Component {
                                         Stream Facebook
                                     </a>
                                     <ul className="dropdown-menu">
-                                        <li><NavLink className="dropdown-item" to="/HomeFBLiveStream">Facebook Dashboard</NavLink></li>
-                                        <li><NavLink className="dropdown-item" to="/FBLiveStream">Go Live</NavLink></li>                                        
+                                        <li><NavLink className="dropdown-item" to="/">Facebook Dashboard</NavLink></li>
+                                        <li><NavLink className="dropdown-item" to="/">Go Live</NavLink></li>                                        
                                     </ul>
                                 </li>
 
                             </ul>
                         </div>
-                        <div className="text-white">
+                        <div className="text-white banner-flier">
                             <h1>SIPM...</h1> 
                             <br />                       
                             <h3>A Place Where Your Spiritual Needs meet Divine Solution</h3>

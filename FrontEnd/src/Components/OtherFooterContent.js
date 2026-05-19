@@ -59,8 +59,7 @@ const OtherFooterContent = () => {
                                     <div className="info_contact">
                                         <h4>Call Us</h4>
                                         <a href="mailto:+2348091461222">
-                                            <img src={telephonePlus} alt="phone" style={{width: '30px', height: '30px'}}/><nbsp></nbsp>
-                                            <span className="text-white">
+                                            <img src={telephonePlus} alt="phone" style={{width: '30px', height: '30px'}}/>&nbsp                                            <span className="text-white">
                                                 +234 8091 461 222
                                             </span>
                                         </a>

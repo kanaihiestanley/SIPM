@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import OtherHeaderContent from "./OtherHeaderContent";
 import firstSlide from './images/pastorAndwife-images/pastor4.jpg';
 import secondSlide from './images/pastorAndwife-images/pastor-wife2.jpg';
-import thirdSlide from './images/pastorAndwife-images/pastor3.jpg';
+import thirdSlide from './videos/PastorProfile.mp4';
 import forthSlide from './images/pastorAndwife-images/pastor1.jpg';
 import fiftSlide from './images/pastorAndwife-images/pastorAnWife4.PNG';
 import sixtSlide from './images/pastorAndwife-images/pastor5.JPG';
@@ -80,7 +80,10 @@ const AboutPastor = () =>{
                                             </div>
 
                                             <div className="carousel-item" style={{width: '700px'}}>
-                                                <img src={thirdSlide}  className="d-block w-100 card-img-top" alt="firstSlide" />                                               
+                                                <video className="d-block w-100 card-img-top" controls autoPlay muted loop>
+                                                    <source src={thirdSlide} type="video/mp4" />
+                                                    Your browser does not support the video tag.
+                                                </video>                                               
                                             </div>
 
                                             <div className="carousel-item" style={{width: '700px'}}>
